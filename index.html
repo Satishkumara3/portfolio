@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Satish Kumar — Machine Learning Engineer, GenAI Developer & Competitive Programmer. Explore my projects, skills, and achievements." />
+    <title>Satish Kumar — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+</head>
+
+<body>
+
+    <!-- Cursor Particle Tail -->
+    <div id="cursor-tail"></div>
+    <div class="cursor-aura"></div>
+
+    <!-- Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <a href="#hero" class="nav-logo">SK<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+            <button class="nav-hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">// Hello, World</p>
+            <h1 class="hero-name">
+                I'm <span class="gradient-text">Satish Kumar</span>
+            </h1>
+            <div class="hero-title-wrapper">
+                <p class="hero-title">
+                    <span class="typed-text"></span>
+                </p>
+            </div>
+
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-value" data-count="350" data-suffix="+">0</div>
+                    <div class="hero-stat-label">Problems Solved</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value" id="hero-lc-rating" data-count="350" data-suffix="+">0</div>
+                    <div class="hero-stat-label">LeetCode Progress</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value" id="hero-cc-rating" data-count="2" data-suffix="">0</div>
+                    <div class="hero-stat-label">Major Projects</div>
+                </div>
+            </div>
+
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">⚡ View Projects</a>
+                <a href="cv.pdf" download class="btn btn-outline">📄 Download CV</a>
+                <a href="#contact" class="btn btn-outline">📬 Get In Touch</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-mouse"></div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+        <div class="section-header reveal">
+            <span class="section-tag">// Who Am I</span>
+            <h2 class="section-title">About Me</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text reveal-left">
+                <p>
+                    I'm <strong>Satish Kumar</strong>, a B.Tech Computer Science student at
+                    <strong>Lovely Professional University</strong> with a deep interest in
+                    <strong>Machine Learning, Generative AI, and Agentic Workflows</strong>.
+                </p>
+                <p>
+                    I specialize in building intelligent systems that leverage Large Language Models (LLMs) and
+                    advanced recommendation algorithms. With a solid foundation in <strong>Data Structures and
+                        Algorithms</strong>,
+                    I've solved over <strong>350+ problems</strong> on LeetCode and NeoColab.
+                </p>
+                <p>
+                    My recent work involves developing <strong>Agentic AI agents</strong> using LangChain and
+                    crafted <strong>Movie Recommendation Systems</strong> that deliver personalized user experiences.
+                </p>
+                <p>
+                    🚀 <strong>Currently exploring:</strong> Multi-step reasoning agents, RAG architectures, and
+                    scalable GenAI applications.
+                </p>
+
+                <div class="about-info-grid">
+                    <div class="about-info-item">
+                        <div class="about-info-label">Name</div>
+                        <div class="about-info-value">Satish Kumar</div>
+                    </div>
+                    <div class="about-info-item">
+                        <div class="about-info-label">University</div>
+                        <div class="about-info-value">LPU, Punjab</div>
+                    </div>
+                    <div class="about-info-item">
+                        <div class="about-info-label">Degree</div>
+                        <div class="about-info-value">B.Tech CSE</div>
+                    </div>
+                    <div class="about-info-item">
+                        <div class="about-info-label">CGPA</div>
+                        <div class="about-info-value">7.93</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-image-wrapper reveal-right">
+                <div class="about-image-card">
+                    <div class="about-avatar">
+                        <img src="profile.jpg" alt="Satish Kumar"
+                            onerror="this.style.display='none'; this.parentElement.textContent='SK';" />
+                    </div>
+                    <div class="floating-badge">🤖 GenAI & ML</div>
+                    <div class="floating-badge">⚡ 350+ Problems</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+        <div class="section-header reveal">
+            <span class="section-tag">// What I Know</span>
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card reveal" style="transition-delay: 0.1s">
+                <span class="skill-icon">💻</span>
+                <h3>Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal" style="transition-delay: 0.2s">
+                <span class="skill-icon">🧠</span>
+                <h3>Machine Learning & AI</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Data Preprocessing</span>
+                    <span class="skill-tag">Feature Engineering</span>
+                    <span class="skill-tag">Supervised Learning</span>
+                    <span class="skill-tag">Unsupervised Learning</span>
+                    <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">CNN</span>
+                    <span class="skill-tag">Transformers</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal" style="transition-delay: 0.3s">
+                <span class="skill-icon">✨</span>
+                <h3>Generative AI</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">RAG</span>
+                    <span class="skill-tag">LangChain</span>
+                    <span class="skill-tag">LLMs</span>
+                    <span class="skill-tag">Agentic AI</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal" style="transition-delay: 0.4s">
+                <span class="skill-icon">⚙️</span>
+                <h3>Frameworks & Tools</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Hugging Face</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Streamlit</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal" style="transition-delay: 0.5s">
+                <span class="skill-icon">🛠️</span>
+                <h3>Platforms & Others</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">DSA</span>
+                    <span class="skill-tag">OOPS</span>
+                    <span class="skill-tag">OS</span>
+                    <span class="skill-tag">Computer Networks</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal" style="transition-delay: 0.6s">
+                <span class="skill-icon">🤝</span>
+                <h3>Soft Skills</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Problem-Solving</span>
+                    <span class="skill-tag">Team Collaboration</span>
+                    <span class="skill-tag">Adaptability</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience">
+        <div class="section-header reveal">
+            <span class="section-tag">// Professional Journey</span>
+            <h2 class="section-title">Experience</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="experience-card reveal">
+            <div class="exp-header">
+                <div class="exp-role">
+                    <h3>AI Research Assistant (Agentic AI)</h3>
+                    <span class="exp-company">Self-Directed Research — LangChain & GenAI</span>
+                </div>
+                <span class="exp-date">Jan 2026 — Mar 2026</span>
+            </div>
+
+            <div class="exp-desc">
+                <li>Developed an AI agent using LangChain capable of multi-step reasoning and autonomous tool usage for
+                    automated research tasks.</li>
+                <li>Explored integration of Large Language Models (LLMs) to generate intelligent, context-aware
+                    responses in real-world scenarios.</li>
+                <li>Worked on prompt engineering and agent-based architectures to optimize performance for complex task
+                    automation.</li>
+                <li>Focused on building scalable GenAI applications using Python and modern AI frameworks.</li>
+            </div>
+
+            <div class="exp-tech">
+                <span>Python</span>
+                <span>LangChain</span>
+                <span>Groq</span>
+                <span>Tavily</span>
+                <span>LLM APIs</span>
+                <span>Streamlit</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+        <div class="section-header reveal">
+            <span class="section-tag">// Featured Work</span>
+            <h2 class="section-title">Projects</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img src="movie_recommendation_system.png" alt="Movie Recommendation System" />
+                </div>
+                <div class="project-header">
+                    <div class="project-icon">🎬</div>
+                    <div class="project-links">
+                        <a href="https://github.com/Satishkumara3/Movie_Recommendation_System" target="_blank"
+                            rel="noopener" title="GitHub">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                        <a href="https://movie-recommendation-system-c9a2.onrender.com" target="_blank" rel="noopener"
+                            title="Live Demo">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Movie Recommendation System</h3>
+                    <span class="project-date">Sep 2025 — Nov 2025</span>
+                    <div class="project-desc">
+                        <li>Built a system that recommends movies based on user preferences using machine learning
+                            algorithms, focusing on personalization.</li>
+                        <li>Enhanced recommendation logic using similarity-based ML techniques and real-time data APIs
+                            for accurate suggestions.</li>
+                        <li>Implemented collaborative and content-based filtering techniques to improve overall
+                            recommendation quality.</li>
+                        <li>Built an interactive dashboard for easy movie selection and real-time recommendation display
+                            via Streamlit.</li>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>Pandas</span>
+                        <span>Streamlit</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card reveal" style="transition-delay: 0.15s">
+                <div class="project-image">
+                    <img src="ai_research_assistant.png" alt="AI Research Assistant" />
+                </div>
+                <div class="project-header">
+                    <div class="project-icon">🤖</div>
+                    <div class="project-links">
+                        <a href="https://github.com/Satishkumara3/langchain_agent_ai" target="_blank" rel="noopener"
+                            title="GitHub">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                        <a href="https://langchainagentai-nmfdshcb5ynuzdqsv2qmqd.streamlit.app" target="_blank"
+                            rel="noopener" title="Live Demo">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">AI Research Assistant (Agentic AI)</h3>
+                    <span class="project-date">Jan 2026 — Mar 2026</span>
+                    <div class="project-desc">
+                        <li>Developed an AI agent using LangChain capable of multi-step reasoning and autonomous tool
+                            usage.</li>
+                        <li>Explored integration of LLMs (Gemini, Groq) to generate intelligent and context-aware
+                            responses.</li>
+                        <li>Worked on prompt engineering and agent-based architectures for real-world automation.</li>
+                        <li>Built with Python, Streamlit, and modern GenAI libraries for a seamless user experience.
+                        </li>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>LangChain</span>
+                        <span>Groq</span>
+                        <span>Tavily</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS ===== -->
+    <section id="achievements">
+        <div class="section-header reveal">
+            <span class="section-tag">// My Milestones</span>
+            <h2 class="section-title">Achievements</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="achievements-grid">
+            <a href="https://leetcode.com/Satishkumara3" target="_blank" rel="noopener" class="achievement-card reveal"
+                style="transition-delay: 0.1s">
+                <span class="achievement-icon">🏅</span>
+                <h3>LeetCode</h3>
+                <div class="achievement-rating" id="ach-lc-rating" data-count="350" data-suffix="+">0</div>
+                <p class="achievement-label" id="ach-lc-label">Problems Solved</p>
+            </a>
+
+            <div class="achievement-card reveal" style="transition-delay: 0.2s">
+                <span class="achievement-icon">⭐</span>
+                <h3>NeoColab</h3>
+                <div class="achievement-rating" data-count="50" data-suffix="+">0</div>
+                <p class="achievement-label">DSA Challenges</p>
+            </div>
+
+            <div class="achievement-card reveal" style="transition-delay: 0.3s">
+                <span class="achievement-icon">🎯</span>
+                <h3>GeeksforGeeks</h3>
+                <div class="achievement-rating" data-count="100" data-suffix="+">0</div>
+                <p class="achievement-label">Total Points</p>
+            </div>
+        </div>
+
+        <div class="achievement-total reveal" style="transition-delay: 0.4s">
+            <div class="achievement-total-value" data-count="350" data-suffix="+">0</div>
+            <p class="achievement-total-label">Solved over 350+ Data Structures and Algorithms problems on LeetCode and
+                NeoColab.</p>
+        </div>
+    </section>
+
+    <!-- ===== TRAINING & CERTS ===== -->
+    <section id="certifications">
+        <div class="section-header reveal">
+            <span class="section-tag">// Learning Journey</span>
+            <h2 class="section-title">Training & Certifications</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="certs-grid">
+            <div class="cert-card reveal" style="transition-delay: 0.1s">
+                <div class="cert-image">
+                    <img src="cert_dsa.jpg" alt="Data Structure and Algorithms" />
+                </div>
+                <span class="cert-badge">🎓</span>
+                <h3>Data Structure and Algorithms</h3>
+                <p class="cert-issuer">Lovely Professional University</p>
+                <p class="cert-date">Jun 2025 — Jul 2025</p>
+            </div>
+
+            <div class="cert-card reveal" style="transition-delay: 0.2s">
+                <div class="cert-image">
+                    <img src="cert_privacy.png" alt="Privacy and Security" />
+                </div>
+                <span class="cert-badge">🔓</span>
+                <h3>Privacy and Security in Online Social Media</h3>
+                <p class="cert-issuer">NPTEL</p>
+                <p class="cert-date">Dec 2025</p>
+            </div>
+
+            <div class="cert-card reveal" style="transition-delay: 0.3s">
+                <div class="cert-image">
+                    <img src="cert_hackathon.png" alt="Build-a-Thon Hackathon" />
+                </div>
+                <span class="cert-badge">🏆</span>
+                <h3>Build-a-Thon Hackathon</h3>
+                <p class="cert-issuer">Boardinfinity</p>
+                <p class="cert-date">Feb 2024</p>
+            </div>
+
+            <div class="cert-card reveal" style="transition-delay: 0.4s">
+                <div class="cert-image">
+                    <img src="cert_networking.jpg" alt="The Bits and Bytes of Computer Networking" />
+                </div>
+                <span class="cert-badge">🌐</span>
+                <h3>The Bits and Bytes of Computer Networking</h3>
+                <p class="cert-issuer">Coursera</p>
+                <p class="cert-date">Sep 2024</p>
+            </div>
+
+            <div class="cert-card reveal" style="transition-delay: 0.5s">
+                <div class="cert-image">
+                    <img src="cert_hardware.jpg" alt="Introduction to Hardware and Operating Systems" />
+                </div>
+                <span class="cert-badge">🖥️</span>
+                <h3>Introduction to Hardware and Operating Systems</h3>
+                <p class="cert-issuer">Google (via Coursera)</p>
+                <p class="cert-date">Sep 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education">
+        <div class="section-header reveal">
+            <span class="section-tag">// Where I Studied</span>
+            <h2 class="section-title">Education</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <span class="timeline-date">Aug 2023 — Present</span>
+                <h3>Bachelor of Technology — CSE</h3>
+                <p>Lovely Professional University, Phagwara, Punjab</p>
+                <span class="timeline-grade">CGPA: 7.93</span>
+            </div>
+
+            <div class="timeline-item reveal" style="transition-delay: 0.15s">
+                <span class="timeline-date">Apr 2020 — Mar 2021</span>
+                <h3>12th (Science)</h3>
+                <p>SJS Public School, Raebareli, Uttar Pradesh</p>
+                <span class="timeline-grade">Percentage: 78.20%</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+        <div class="section-header reveal">
+            <span class="section-tag">// Let's Connect</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+            <a href="mailto:satishyadav130305@gmail.com" class="contact-card reveal" style="transition-delay: 0.1s">
+                <span class="contact-icon">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </span>
+                <h3>Email</h3>
+                <p>satishyadav130305@gmail.com</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/satish2356/" target="_blank" rel="noopener" class="contact-card reveal"
+                style="transition-delay: 0.2s">
+                <span class="contact-icon">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0H5C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+                </span>
+                <h3>LinkedIn</h3>
+                <p>in/satish2356</p>
+            </a>
+
+            <a href="https://github.com/Satishkumara3" target="_blank" rel="noopener" class="contact-card reveal"
+                style="transition-delay: 0.3s">
+                <span class="contact-icon">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </span>
+                <h3>GitHub</h3>
+                <p>Satishkumara3</p>
+            </a>
+
+            <a href="tel:+917607373638" class="contact-card reveal" style="transition-delay: 0.4s">
+                <span class="contact-icon">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                </span>
+                <h3>Phone</h3>
+                <p>+91 7607373638</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>Designed & Built with <span class="heart">❤</span> by Satish Kumar — 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
